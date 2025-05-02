@@ -118,6 +118,9 @@
   height: 85vh;
   object-fit: contain;
 }
+.detail_content{
+  padding: 20px;
+}
 .detail_content>h1{
   font-size: 50px;
 }
@@ -183,6 +186,16 @@ table{
 }
 
 @media only screen and (max-width : 768px){
+  .detail_box{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .detail_content>h1{
+    font-size: 30px;
+  }
+  .detail_content>p{
+    font-size: 14px;
+    text-align: justify;
+  }
   table{
     margin: 10px auto;
   }
@@ -220,6 +233,9 @@ table{
     font-size: 16px;
   }
   table>tbody>tr>td{
+    font-size: 12px;
+  }
+  table>thead>tr>th{
     font-size: 12px;
   }
   table>tbody>tr>td>img{
